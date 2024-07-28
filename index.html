@@ -8,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>My Porto</title>
   </head>
   <body>
@@ -24,7 +25,8 @@
               <li><a class="hover:text-primary">Project</a></li>
               <li><a class="hover:text-primary">Certification</a></li>
               <li>
-                <a class="btn btn-outline btn-primary rounded-full py-2 px-4">My CV</a>
+                <!-- Link to PDF file -->
+                <a href="https://drive.google.com/file/d/1lw3Fao6zEb-3YeYna3WaB_iRI4x8cCce/view?usp=sharing" download class="btn btn-outline btn-primary rounded-full py-2 px-4"> My CV </a>
               </li>
             </ul>
           </div>
@@ -35,7 +37,7 @@
       <!-- Hero Section -->
 
       <!-- Hero Section -->
-      <div class="hero min-h-screen lg:mt-8 pt-8">
+      <div class="hero min-h-screen lg:mt-8 pt-8" data-aos="fade-up" data-duration="2000">
         <!-- Add padding top to avoid navbar overlap -->
         <div class="flex justify-center items-center h-full">
           <div class="hero-content flex-col lg:flex-row lg:justify-center lg:items-center">
@@ -66,7 +68,7 @@
         <h1 class="text-center text-4xl font-bold mb-6 text-white">Project 🎬</h1>
         <div class="grid lg:w-4/5 lg:mx-auto lg:justify-center lg:items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-12">
           <!-- Card 1 -->
-          <div class="card bg-base-100 shadow-xl w-full">
+          <div class="card bg-base-100 shadow-xl w-full" data-aos="fade-right">
             <figure>
               <img src="images/Project 1.png" alt="Project Image" class="object-cover w-full h-48" />
             </figure>
@@ -79,7 +81,7 @@
             </div>
           </div>
           <!-- Card 2 -->
-          <div class="card bg-base-100 shadow-xl">
+          <div class="card bg-base-100 shadow-xl" data-aos="fade-left">
             <figure>
               <img src="images/Project 2.png" alt="Project Image" class="object-cover w-full h-48" />
             </figure>
@@ -92,7 +94,7 @@
             </div>
           </div>
           <!-- Card 3 -->
-          <div class="card bg-base-100 shadow-xl">
+          <div class="card bg-base-100 shadow-xl" data-aos="fade-right">
             <figure>
               <img src="images/Carius landing page.png" alt="Project Image" class="object-cover w-full h-48" />
             </figure>
@@ -105,7 +107,7 @@
             </div>
           </div>
           <!-- Card 4 -->
-          <div class="card bg-base-100 shadow-xl">
+          <div class="card bg-base-100 shadow-xl" data-aos="fade-left">
             <figure>
               <img src="images/Cloth Design.jpg" alt="Project Image" class="object-cover w-full h-48" />
             </figure>
@@ -223,6 +225,10 @@
         typeSpeed: 100,
         loop: true,
       });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
