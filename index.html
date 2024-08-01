@@ -27,25 +27,51 @@
   <body>
     <div class="container mx-auto">
       <!-- Navbar -->
-      <div class="navbar fixed top-0 left-0 right-0 drop-shadow-lg z-10">
+      <div class="navbar fixed top-0 left-0 right-0 drop-shadow-lg z-10 bg-white">
         <div class="container mx-auto flex items-center justify-between p-4">
           <div class="flex items-center space-x-4">
             <img src="images/Logo Yt.png" alt="Logo" class="w-10 h-10 rounded-full" />
             <a class="text-lg font-semibold">Tri Aji Pramuditya</a>
           </div>
-          <div>
+          <div class="hidden md:flex">
             <ul class="menu menu-horizontal space-x-4 items-center">
               <li class="group"><a href="#project" class="hover:text-primary">Project</a></li>
               <li class="group"><a href="#certification" class="hover:text-primary">Certification</a></li>
               <li>
-                <!-- Link to PDF file -->
                 <a href="https://drive.google.com/file/d/1lw3Fao6zEb-3YeYna3WaB_iRI4x8cCce/view?usp=sharing" download class="btn btn-outline btn-primary rounded-full py-2 px-4"> My CV </a>
               </li>
             </ul>
           </div>
+          <div class="md:hidden">
+            <button class="btn btn-ghost btn-circle" onclick="toggleMenu()">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden">
+          <ul class="menu menu-vertical space-y-4 items-center bg-white p-4">
+            <li class="group"><a href="#project" class="hover:text-primary">Project</a></li>
+            <li class="group"><a href="#certification" class="hover:text-primary">Certification</a></li>
+            <li>
+              <a href="https://drive.google.com/file/d/1lw3Fao6zEb-3YeYna3WaB_iRI4x8cCce/view?usp=sharing" download class="btn btn-outline btn-primary rounded-full py-2 px-4"> My CV </a>
+            </li>
+          </ul>
         </div>
       </div>
       <!-- Akhir Navbar -->
+
+      <script>
+        function toggleMenu() {
+          const menu = document.getElementById("mobile-menu");
+          if (menu.classList.contains("hidden")) {
+            menu.classList.remove("hidden");
+          } else {
+            menu.classList.add("hidden");
+          }
+        }
+      </script>
 
       <!-- Hero Section -->
 
