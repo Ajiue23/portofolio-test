@@ -10,6 +10,19 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>My Porto</title>
+    <style>
+      @media (min-width: 640px) {
+        .project-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .project-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="container mx-auto">
@@ -66,54 +79,54 @@
       <!-- Section Project -->
       <section id="project" class="my-0 bg-[#1e43fc]" style="height: 1100px">
         <h1 class="text-center text-4xl font-bold mb-6 text-white">Project 🎬</h1>
-        <div class="grid lg:w-4/5 lg:mx-auto lg:justify-center lg:items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-12 lg:mt-16">
+        <div class="flex flex-col items-center justify-center lg:mx-auto lg:justify-center lg:items-center lg:w-4/5">
           <!-- Card 1 -->
-          <div class="card bg-base-100 shadow-xl w-full" data-aos="fade-right" data-duration="4000">
+          <div class="card card-side bg-base-100 shadow-xl mt-8 w-full lg:w-3/4" data-aos="fade-right" data-duration="4000">
             <figure>
-              <img src="images/Project 1.png" alt="Project Image" class="object-cover w-full h-48" />
+              <img src="images/Project 1.png" alt="Movie" class="object-cover w-48 h-48" />
             </figure>
             <div class="card-body">
               <h2 class="card-title">PlantUp App</h2>
-              <p>Click the button to see project</p>
+              <p>Click the button to see the projects</p>
               <div class="card-actions justify-end">
                 <button class="btn btn-primary">Open</button>
               </div>
             </div>
           </div>
           <!-- Card 2 -->
-          <div class="card bg-base-100 shadow-xl" data-aos="fade-left" data-duration="4000">
+          <div class="card card-side bg-base-100 shadow-xl mt-8 w-full lg:w-3/4" data-aos="fade-left" data-duration="4000">
             <figure>
-              <img src="images/Project 2.png" alt="Project Image" class="object-cover w-full h-48" />
+              <img src="images/Project 2.png" alt="Movie" class="object-cover w-48 h-48" />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">My XL Redesign</h2>
-              <p>Click the button to see project</p>
+              <h2 class="card-title">My XL Apps Redesign</h2>
+              <p>Click the button to see the projects</p>
               <div class="card-actions justify-end">
                 <button class="btn btn-primary">Open</button>
               </div>
             </div>
           </div>
           <!-- Card 3 -->
-          <div class="card bg-base-100 shadow-xl" data-aos="fade-right" data-duration="4000">
+          <div class="card card-side bg-base-100 shadow-xl mt-8 w-full lg:w-3/4" data-aos="fade-right" data-duration="4000">
             <figure>
-              <img src="images/Carius landing page.png" alt="Project Image" class="object-cover w-full h-48" />
+              <img src="images/Project 3.png" alt="Movie" class="object-cover w-48 h-48" />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">Carius</h2>
-              <p>Click the button to see project</p>
+              <h2 class="card-title">Cloud Practitioner Essentials (Belajar Dasar AWS Cloud)</h2>
+              <p>Click the button to see the projects</p>
               <div class="card-actions justify-end">
                 <button class="btn btn-primary">Open</button>
               </div>
             </div>
           </div>
           <!-- Card 4 -->
-          <div class="card bg-base-100 shadow-xl" data-aos="fade-left" data-duration="4000">
+          <div class="card card-side bg-base-100 shadow-xl mt-8 w-full lg:w-3/4" data-aos="fade-left" data-duration="4000">
             <figure>
-              <img src="images/Cloth Design.jpg" alt="Project Image" class="object-cover w-full h-48" />
+              <img src="images/Cloth Design.jpg" alt="Movie" class="object-cover w-48 h-48" />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">Common Sense</h2>
-              <p>Click the button to see project</p>
+              <h2 class="card-title">Cloth Design</h2>
+              <p>Click the button to see the projects</p>
               <div class="card-actions justify-end">
                 <button class="btn btn-primary">Open</button>
               </div>
