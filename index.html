@@ -28,7 +28,7 @@
     <div class="container mx-auto">
       <!-- Navbar -->
       <div class="navbar fixed top-0 left-0 right-0 drop-shadow-lg z-10 bg-transparent">
-        <div class="container mx-auto flex items-center justify-between p-4">
+        <div class="container mx-auto flex items-center justify-start p-4">
           <div class="flex items-center space-x-4">
             <img src="images/Logo Yt.png" alt="Logo" class="w-10 h-10 rounded-full" />
             <a class="text-lg font-semibold">Ajiue</a>
@@ -51,7 +51,7 @@
           </div>
         </div>
         <div id="mobile-menu" class="hidden md:hidden">
-          <ul class="menu menu-vertical space-y-4 items-center bg-transparent p-4 mx-4 rounded-lg shadow-lg">
+          <ul class="menu menu-vertical space-y-4 items-center bg-white p-4">
             <li class="group"><a href="#project" class="hover:text-primary">Project</a></li>
             <li class="group"><a href="#certification" class="hover:text-primary">Certification</a></li>
             <li>
@@ -65,7 +65,11 @@
       <script>
         function toggleMenu() {
           const menu = document.getElementById("mobile-menu");
-          menu.classList.toggle("hidden");
+          if (menu.classList.contains("hidden")) {
+            menu.classList.remove("hidden");
+          } else {
+            menu.classList.add("hidden");
+          }
         }
       </script>
 
