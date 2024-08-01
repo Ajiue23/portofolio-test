@@ -51,7 +51,7 @@
           </div>
         </div>
         <div id="mobile-menu" class="hidden md:hidden">
-          <ul class="menu menu-vertical space-y-4 items-center bg-white p-4">
+          <ul class="menu menu-vertical space-y-4 items-center bg-white p-4 mx-4 rounded-lg shadow-lg">
             <li class="group"><a href="#project" class="hover:text-primary">Project</a></li>
             <li class="group"><a href="#certification" class="hover:text-primary">Certification</a></li>
             <li>
@@ -65,11 +65,7 @@
       <script>
         function toggleMenu() {
           const menu = document.getElementById("mobile-menu");
-          if (menu.classList.contains("hidden")) {
-            menu.classList.remove("hidden");
-          } else {
-            menu.classList.add("hidden");
-          }
+          menu.classList.toggle("hidden");
         }
       </script>
 
